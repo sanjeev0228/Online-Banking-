@@ -1,0 +1,28 @@
+<div class="container mt-5">
+    <div>
+      <h3>
+        User Loans
+      </h3>
+    </div>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Loan Id</th>
+            <th scope="col">Type</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Tenure</th>
+            <th scope="col">Interest</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let l of loans" >
+                <td>{{l.loanid}}</td>
+                <td>{{l.type}}</td>
+                <td>{{l.amount}}</td> 
+                <td>{{l.tenure}}</td>
+                <td>{{l.interest}}</td>
+            </tr>
+        </tbody>
+      </table>
+
+</div>

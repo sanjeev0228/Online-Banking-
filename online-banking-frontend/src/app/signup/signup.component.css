@@ -1,0 +1,22 @@
+.card{
+    margin-top: 30px;
+    
+    width: 750px;
+    padding: 15px;
+    position: absolute;
+
+    left: 20%;
+    
+}
+.navbar-custom {
+    background-color:#FD841F;}
+.form-control, .form-control:focus, .input-group-text {
+	border-color: #330c0c;
+}
+
+.h4{
+    font-family: 'Times New Roman', Times, serif;
+}
+.form-control {
+	font-size: 15px;
+}

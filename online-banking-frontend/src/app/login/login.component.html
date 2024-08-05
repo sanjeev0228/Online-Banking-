@@ -1,0 +1,128 @@
+<nav class="navbar navbar-expand-xl navbar-custom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">ICIN BANK</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="d-flex">
+      <button class="btn btn-light"><a href="signup">SIGN-UP</a></button>&nbsp;&nbsp;
+      <!-- <button class="btn btn-light"><a href="http://localhost:4200/adminpw">ADMIN</a></button> -->
+    
+    </div>
+
+    
+  </div>
+</nav>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card border-0">
+                <div class="text-center m-10">
+                    <h1 class="b1">Welcome to ICIN Bank</h1>
+                    <br><br>
+                   <h4><span style="color:rgb(201, 15, 15)">{{msg}}</span></h4>
+                    <br><br>
+                    
+                    <br>
+                </div>
+                <div class="box">
+                  <h5>Login to account</h5>
+                <form [formGroup]="loginRef" (ngSubmit)="signIn()">
+                    
+                    <div class="form-group">
+                      <div class="input-group input-group-lg">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text bg-danger text-white">
+                            <i class="fas fa-envelope"></i>
+                          </span>
+                        </div>
+                        <input type="email" class="form-control text-dark" placeholder="Email" formControlName="email" id="email">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+      
+                      <div class="input-group input-group-lg">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text bg-danger text-white">
+                              <i class="fas fa-user"></i>
+                            </span>
+                          </div>
+                          <input type="password" class="form-control text-dark" placeholder="Password" formControlName="password" id="pwd">
+                        </div>
+                      </div>
+                    
+                    <div class="text-center">
+                      <input  type="Submit" value="login" class="btn btn-danger btn-lg">
+                    </div>
+                  </form>
+                </div>
+                 
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+  <div class="footer-content">
+      <h4>Online-Banking</h4>
+      <p>copyright &copy; <a href="#"> Developers</a>  </p>
+  </div>
+</footer>
+
+<style media="screen">
+  footer{
+      position:absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #111;
+      height: auto;
+      width: 100vw;
+      color: #fff;
+      padding: top 5px;;
+  }
+  .navbar-custom {
+    background-color:#FD841F;}
+  .footer-content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .footer-content p{
+      max-width: 500px;
+      line-height: 20px;
+      font-size: 14px;
+      color: #cacdd2;
+  }
+  .btn-lg:hover{
+    box-shadow: inset -140px 0px 0px 0px black,inset 140px 0px 0px black ;
+  }
+  .box{
+    width: 500px;
+    height: 300px;
+    padding: 50px;
+    border: 5px solid rgb(50, 50, 55);
+
+  }
+  .b1{
+    font-size: x-large;
+    font-weight: bold;
+  }
+  
+  
+  @media (max-width:500px) {
+  .footer-menu ul{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  }
+      </style>

@@ -1,0 +1,159 @@
+<nav class="navbar navbar-expand-xl fixed-top navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">ICIN BANK</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark"
+            aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex">
+            <button class="btn btn-light" ><a href="login">Log In</a></button>
+        </div>
+
+    </div>
+</nav>
+
+
+
+<div class="container ">
+    <div class="row">
+        <div class="col-10">
+            <div class="card border-0">
+                <div class="text-center"><br><br>
+                    <br>
+                    <h1 class="text-dark font-weight-bold">Welcome to ICIN Bank Registraction</h1><br>
+                    <h6 class="text-dark font-weight-bold">{{msg}}</h6><br>
+                </div>
+                <form [formGroup]="signupRef" (ngSubmit)="signUp()">
+                    <div class="mb-3">
+                        <label class="form-label font-weight-bold">Name</label>
+                        <div class="form-group">
+
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-dark text-white">
+                                        <span class="fa fa-user"></span>
+                                    </span>
+                                </div>
+                                <input type="text"  formControlName="name" class="form-control" name="name" placeholder="Enter Your Name"
+                                    required="required" id="name"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label font-weight-bold">Email address</label>
+                        <div class="form-group">
+
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-dark text-white">
+                                        <span class="fa fa-envelope"></span>
+                                    </span>
+                                </div>
+                                <input type="email" formControlName="email" class="form-control" name="email" placeholder="Enter Email Id"
+                                    required="required" id="email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label font-weight-bold">Password</label>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-dark text-white">
+                                        <span class="fa fa-lock"></span>
+                                    </span>
+                                </div>
+                                <input type="password" formControlName="password" class="form-control" id="password" name="password"
+                                    placeholder="Enter your password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 ">
+                        <label class="form-label font-weight-bold">Phone Number</label>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-dark text-white">
+                                        <span class="fa fa-phone"></span>
+                                    </span>
+                                </div>
+                                <input type="text" formControlName="phno" class="form-control" id="phno" name="phno"
+                                    placeholder="Enter Phone Number">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mb-3 ">
+                        <label class="form-label font-weight-bold">Address</label>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-dark text-white">
+                                        <span class="fa fa-address-book"></span>
+                                    </span>
+                                </div>
+                                <input type="text" formControlName="address" class="form-control" id="address" name="address"
+                                    placeholder="Enter Address">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mb-3 ">
+                        <label class="form-label font-weight-bold">Pan No</label>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-dark text-white">
+                                        <span class="fa fa-user"></span>
+                                    </span>
+                                </div>
+                                <input type="text" formControlName="panno" class="form-control" id="panno" name="panno"
+                                    placeholder="Enter Pan No">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mb-3 ">
+                        <label class="form-label font-weight-bold">Date</label>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-dark text-white">
+                                        <span class="fa fa-calendar"></span>
+                                    </span>
+                                </div>
+                                <input type="date" formControlName="date" class="form-control" id="date" name="date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 ">
+                        <label class="form-label font-weight-bold">Transaction Password</label>
+                        <div class="form-group">
+                            <div class="input-group ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-dark text-white">
+                                        <span class="fa fa-lock"></span>
+                                    </span>
+                                </div>
+                                <input type="text" formControlName="transactionpassword" class="form-control" id="transactionpassword"
+                                    name="transactionpassword" placeholder="Enter Transaction Password">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>SUCCESSFULLY REGISTERED!</strong> 
+                        <button (click)="closeAlert()"type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>                   
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-dark btn-lg float-center align-right">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
