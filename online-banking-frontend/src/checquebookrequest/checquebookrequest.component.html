@@ -1,0 +1,28 @@
+<div class="container mt-5">
+      <div>
+        <h3>Cheque Book Requests</h3>
+      </div>  
+    <table class="table">
+        
+        <thead class="thead-dark">
+          <tr>
+            
+    
+            <th scope="col">Account Number</th>
+            <th scope="col">Status</th>
+            <th scope="col">Action</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let c of cheques">
+                <td>{{c.accountno}}</td>
+                <td>{{c.cheque}}</td>
+                <td>
+                <div class="row">
+                  <div class="col"><button  type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" (click)="accept(c.accountno)">Approve</button></div>
+             </div>
+            </td>
+            </tr>
+        </tbody>
+      </table>
+
+</div>
