@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-xl fixed-top navbar-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ICIN BANK</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="d-flex">
+        <div class="collapse navbar-collapse show" id="navbarDark">
+            <ul class="navbar-nav me-auto mb-2 mb-xl-0">                                      
+              <li class="nav-item">
+                <a class="nav-link text-white" routerLink="/login"  >logout</a>
+              </li>
+            </ul>  
+          </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-5">
+      <div class="row main">
+        <div class="panel-heading">
+                 <div class="panel-title text-center">
+                     <h3 class="title">Request Permission</h3>
+                     
+                   </div>
+                 </div> 
+  
+      <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">AccountNumber</th>
+              <th scope="col">AccountType</th>
+              <th scope="col">Action </th>
+
+            </tr>
+          </thead>
+          <tbody>
+  
+  
+              <tr *ngFor="let a of accounts">
+                   
+                  <td>{{a.accountno}}</td>
+                  <td>{{a.accounttype}}</td>
+                  
+
+                  <td>
+                  <div class="row">
+                    <div class="col"><button  type="button" class="btn btn-success" (click)="approve(a.accountno)" >Approve</button></div>
+                    <div class="col"><button type="button"  class="btn btn-danger" (click)="decline(a.accountno)">Decline</button></div>
+               </div>
+              </td>
+              </tr>
+          </tbody>
+        </table>
+     </div>
+
+  </div>

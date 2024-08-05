@@ -1,0 +1,84 @@
+.one{
+    margin-top: 100px;
+}
+.two{
+    padding: 30px;
+}
+
+a{
+    color: rgb(244, 229, 229);
+}
+.b1:hover{
+    box-shadow: inset -140px 0px 0px 0px rgb(32, 32, 32),inset 140px 0px 0px rgb(32, 32, 32) ;
+  }
+.hov:hover{
+    color: #0f0;
+}
+.bar{
+    padding: 15px;
+}
+
+.welcome{
+    margin-top: 50px;
+    
+    
+    
+    position: absolute;
+   
+}
+.navbar-custom {
+    background-color:#FD841F;}
+.left{
+    margin-top: 200px;
+    margin-left: 40px;
+}
+
+.rule{
+    border: 1px solid #d9b5b5;
+  border-radius: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #f1ecec;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(244, 128, 165);
+}
+th{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: green;
+}
+.title{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+.output{
+    margin-top: 40px;
+}
+footer{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    color: #fff;
+    padding: top 5px;
+    padding-top: 40px;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content p{
+    max-width: 500px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #cacdd2;
+}

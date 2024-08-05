@@ -1,0 +1,70 @@
+<nav class="navbar navbar-expand-xl fixed-top navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">ICIN BANK</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark"
+            aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex">
+            <button class="btn btn-light" routerLink="">Log Out</button>
+        </div>
+
+    </div>
+</nav>
+
+
+
+<div class="container ">
+    <div class="row">
+        <div class="col-10">
+            <div class="card border-0">
+                <div class="text-center"><br><br>
+                    <h4 class="text-dark font-weight-bold">Check Balance</h4><br>
+                </div>
+                <form [formGroup]="balRef" (ngSubmit)="balance()">
+                    <div class="mb-3">
+                        <label class="form-label font-weight-bold">Account Number</label>
+                        <div class="form-group">
+
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-dark text-white">
+                                        <span class="fa fa-envelope"></span>
+                                    </span>
+                                </div>
+                                <input type="nummber" formControlName="accountno" class="form-control" name="accountno" placeholder="Account Number"
+                                    required="required" id="password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label font-weight-bold">Balance</label>
+                        <div class="form-group">
+
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                   
+                                </div>
+                                <h4>{{msg}}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-dark btn-lg float-center align-right">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <h4>Online-Banking</h4>
+        <p>copyright &copy; <a href="#"> Developers</a>  </p>
+    </div>
+  </footer>

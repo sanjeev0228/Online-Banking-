@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-xl fixed-top navbar-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ICIN BANK</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="d-flex">
+        <div class="collapse navbar-collapse show" id="navbarDark">
+            <ul class="navbar-nav me-auto mb-2 mb-xl-0">                                      
+              <li class="nav-item">
+                <a class="nav-link text-white" routerLink="/login"  >logout</a>
+              </li>
+            </ul>  
+          </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-5">
+      <div class="row main">
+        <div class="panel-heading">
+                 <div class="panel-title text-center">
+                    <h3 class="title">All Users</h3>
+                    
+                   </div>
+                 </div> 
+  
+      <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">UserId</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email Id</th>
+              <th scope="col">Address</th>
+              <th scope="col">Phone number</th>
+              <th scope="col">Pan number</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+  
+  
+              <tr *ngFor="let u of users">
+                  <td>{{u.userid}}</td>
+                  <td>{{u.name}}</td>
+                  <td>{{u.email}}</td> 
+                  <td>{{u.address}}</td>
+                  <td>{{u.phno}}</td>
+                  <td>{{u.panno}}</td>
+                  
+                  
+                  
+              </tr>
+          </tbody>
+        </table>
+      </div>
+   
+  </div>
