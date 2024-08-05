@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-28T10:07:21 IST" name="Default suite" finished-at="2022-10-28T10:07:35 IST" duration-ms="14742">
+    <groups>
+    </groups>
+    <test started-at="2022-10-28T10:07:21 IST" name="Default test" finished-at="2022-10-28T10:07:35 IST" duration-ms="14742">
+      <class name="seliniumtesting.test1">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:seliniumtesting.test1@3f6f6701]" started-at="2022-10-28T10:07:21 IST" name="beforeMethod" finished-at="2022-10-28T10:07:22 IST" duration-ms="1769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testing()[pri:0, instance:seliniumtesting.test1@3f6f6701]" started-at="2022-10-28T10:07:22 IST" name="testing" finished-at="2022-10-28T10:07:30 IST" duration-ms="7963" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testing -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:seliniumtesting.test1@3f6f6701]" started-at="2022-10-28T10:07:30 IST" name="beforeMethod" finished-at="2022-10-28T10:07:31 IST" duration-ms="923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:seliniumtesting.test1@3f6f6701]" started-at="2022-10-28T10:07:30 IST" name="afterMethod" finished-at="2022-10-28T10:07:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="customersignin()[pri:1, instance:seliniumtesting.test1@3f6f6701]" started-at="2022-10-28T10:07:31 IST" name="customersignin" finished-at="2022-10-28T10:07:35 IST" duration-ms="4046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customersignin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:seliniumtesting.test1@3f6f6701]" started-at="2022-10-28T10:07:35 IST" name="afterMethod" finished-at="2022-10-28T10:07:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- seliniumtesting.test1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
